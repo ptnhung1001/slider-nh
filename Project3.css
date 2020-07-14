@@ -1,0 +1,16 @@
+.container {
+
+}
+#captions {
+    margin-top: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    color: palevioletred;
+    font-size: large;
+}
+.btn {
+    color: black;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    margin: 10px;
+}

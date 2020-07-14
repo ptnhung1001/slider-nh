@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>❃Welcome Funix❃</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Project3.css">
+</head>
+<body>
+
+<div class="container">
+    <div style="text-align: center; height:400px;">
+        <img src="img/funix-bai-dang-1024x620.jpg" alt="funix" id="img1">
+        <img src="img/FUNiX-10nguyentac-slide1.png" alt="funix" id="img2">
+        <img src="img/xisotop-1573806274.jpg" alt="funix" id="img3">
+        <img src="img/FUNiX-International-logo.png" alt="funix" id="img4">
+    </div>
+    <div style="text-align: center"><p id="captions">Tham gia để nhận học bổng liền tay🌸🌸!!</p></div>
+    <div style="text-align: center">
+        <button type="button" id="btn1" class="btn">1</button>
+        <button type="button" id="btn2" class="btn">2</button>
+        <button type="button" id="btn3" class="btn">3</button>
+        <button type="button" id="btn4" class="btn">4</button>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+    // Ẩn 3 ảnh, chỉ hiển thị ảnh đầu tiên của slide
+    $("#img2").hide();
+    $("#img3").hide();
+    $("#img4").hide();
+    // Thực hiện function khi click vào button 1 của slide
+    $("#btn1").on("click", function () {
+        $("#btn1").css("background-color", "blue");
+        $("#btn1").css("color", "white");
+
+        $("#captions").text("Tham gia để nhận học bổng liền tay🌸🌸!!");
+        $("#img1").animate({
+            height: 'show'
+        });
+        $("#img2").animate({
+            height: 'hide'
+        });
+        $("#img3").animate({
+            height: 'hide'
+        });
+        $("#img4").animate({
+            height: 'hide'
+        });
+    });
+    // Thực hiện function khi click vào button 2 của slide
+    $("#btn2").on("click", function () {
+        $("#btn2").css("background-color", "blue");
+        $("#btn2").css("color", "white");
+        $("#captions").text("🌻Chủ động học online mọi lúc mọi nơi🌼");
+        $("#img2").animate({
+            height: 'show'
+        });
+        $("#img1").animate({
+            height: 'hide'
+        });
+        $("#img3").animate({
+            height: 'hide'
+        });
+        $("#img4").animate({
+            height: 'hide'
+        });
+    });
+    // Thực hiện function khi click vào button 3 của slide
+    $("#btn3").on("click", function () {
+        $("#btn3").css("background-color", "blue");
+        $("#btn3").css("color", "white");
+        $("#captions").text("ღ Luôn Mentor hỗ trợ nhiệt tình ღ");
+        $("#img3").animate({
+            height: 'show'
+        });
+        $("#img2").animate({
+            height: 'hide'
+        });
+        $("#img1").animate({
+            height: 'hide'
+        });
+        $("#img4").animate({
+            height: 'hide'
+        });
+    });
+    // Thực hiện function khi click vào button 4 của slide
+    $("#btn4").on("click", function () {
+        $("#btn4").css("background-color", "blue");
+        $("#btn4").css("color", "white");
+        $("#captions").text("✩ Trở thành Developer chuyên nghiệp ngay thôi nào 🌺!");
+        $("#img4").animate({
+            height: 'show'
+        });
+        $("#img3").animate({
+            height: 'hide'
+        });
+        $("#img2").animate({
+            height: 'hide'
+        });
+        $("#img1").animate({
+            height: 'hide'
+        });
+    });
+</script>
+</body>
+</html>
+
+
